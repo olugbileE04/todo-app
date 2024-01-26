@@ -1,0 +1,70 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+
+}
+.form{
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+.button{
+  background-color: teal;
+  color: white;
+    padding: 10px;
+   cursor: pointer;
+    outline: none;
+}
+p{
+  
+  color: white;
+  font-family: sans-serif;
+  background-color: teal;
+    padding: 10px;
+   
+    outline: none;
+    width: 180px;
+}
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Adjust as needed */
+}
+
+.checkbox {
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.icon {
+  font-size: 18px; /* Adjust as needed */
+}
+
+.trash {
+  margin-left: auto; /* Push the trash icon to the right */
+}
+.line_through{
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    padding: 10px; 
+    font-size: 14px;
+    gap: 5px;
+
+    
+  }
+
+  .form, .button, p {
+    width: 100%; /* Set full width on smaller screens */
+    max-width: none; /* Remove max-width on smaller screens */
+  }
+
+  .task {
+    margin-bottom: 5px; /* Adjust as needed */
+  }
+}

@@ -1,0 +1,56 @@
+.nav{
+    background-color: teal;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+
+}
+.nav-links{
+    color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+ justify-content: center;
+
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+ 
+
+   
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+      /* Change to a column layout on smaller screens */
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      font-size: 10px;
+      gap: 5px;
+    
+    }
+  
+    .nav-links {
+      margin-right: 0; /* Remove right margin on smaller screens */
+    }
+  
+    .nav-links li {
+      padding: 10px 0; 
+      font-size: 15px;
+      text-align: center;
+      display: block;
+      margin-bottom: 5px; /* Adjust as needed */
+    }
+  }
